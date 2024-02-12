@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./SimpleStorage.sol";
+import "./SimpleStorage.sol"; // This store variables
 
 contract StorageFactory {
     //type          //visibilty     // variable name
@@ -12,7 +12,7 @@ contract StorageFactory {
         simpleStorageArray.push(simpleStorage);
     }
 
-    // trying to interact with store function from simpleStorage contract
+    // trying to interact with store function from SmpleStorage contract
     function sfStore(
         uint256 _simpleStorageIndex,
         uint256 _simpleStorageNum
